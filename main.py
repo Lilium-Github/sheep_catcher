@@ -169,7 +169,7 @@ scoresFile = open("sheep_catcher/scores.txt", "w") #open the file
 #scoresDict.pop(next(iter(scoresDict))) #get rid of *oldest* score (another new thing I just learned)
 name = input("enter 3 initials:")
 
-scoresDict.update({name : random.randrange(100, 900)})#add in initials and a random score
+scoresDict.update({name : timer})#add in initials and a random score
 print("updated dictionary:", scoresDict)
 
 
